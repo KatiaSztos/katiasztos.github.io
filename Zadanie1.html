@@ -3,42 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Świat Małp</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.75);
+            margin: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid gold;
+        }
+
+        h1 {
+            color: gold;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 15px;
+            border: 2px solid gold;
+            margin: 10px;
+        }
+    </style>
 </head>
 
-<body style="background-color: black; color: white; font-family: Arial;">
+<body>
 
-    <h1 style="color: gold; text-align: center; text-decoration: underline;">
-        Świat Małp
-    </h1>
+    <!-- FILMIK W TLE -->
+    <video autoplay muted loop>
+        <source src="https://cdn.coverr.co/videos/coverr-monkey-on-a-tree-5177/1080p.mp4" type="video/mp4">
+    </video>
 
-    <p>
-        <b>Małpy</b> to bardzo <i>inteligentne</i> zwierzęta, które żyją głównie w
-        <u>ciepłych rejonach świata</u>.
-    </p>
+    <div class="content">
 
-    <p>
-        Wyróżniamy małpy <sup>człekokształtne</sup> oraz <sub>niższe</sub>.
-    </p>
+        <h1>🐒 Świat Małp 🍌</h1>
 
-    <p style="color: lightgreen; font-size: 18px;">
-        Najbardziej znane małpy to: szympansy, goryle oraz orangutany.
-    </p>
+        <p>
+            <b>Małpy</b> to jedne z najbardziej <i>inteligentnych</i> zwierząt na świecie.
+            Żyją głównie w <u>lasach tropikalnych</u> i uwielbiają wspinaczkę.
+        </p>
 
-    <br>
+        <p>
+            Ich ulubionym przysmakiem są <b style="color: yellow;">banany 🍌</b>,
+            ale jedzą też owoce, liście oraz owady.
+        </p>
 
-    <p style="font-family: 'Courier New'; color: lightblue;">
-        Małpy potrafią używać narzędzi i uczyć się przez obserwację.
-    </p>
+        <p style="color: lightgreen; font-size: 18px;">
+            Małpy potrafią używać narzędzi, zapamiętywać twarze oraz uczyć się przez obserwację.
+        </p>
 
-    <hr>
+        <p>
+            Wyróżniamy małpy <sup>człekokształtne</sup> oraz <sub>niższe</sub>.
+        </p>
 
-    <p style="color: orange;">
-        Chcesz dowiedzieć się więcej o małpach?
-    </p>
+        <br>
 
-    <a href="https://pl.wikipedia.org/wiki/Małpy" target="_blank" style="color: gold;">
-        Kliknij tutaj – Wikipedia o małpach
-    </a>
+        <p style="font-family: 'Courier New'; color: lightblue;">
+            Szympansy są bardzo podobne do ludzi – mają nawet podobne DNA.
+        </p>
+
+        <hr>
+
+        <h2 style="color: orange;">📸 Zdjęcia małp</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Chimpanzee_Head.jpg" alt="Szympans">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Gorilla_gorilla.jpg" alt="Goryl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Orangutan_Borneo.jpg" alt="Orangutan">
+
+        <hr>
+
+        <p style="color: gold;">
+            Jeśli chcesz dowiedzieć się więcej o małpach:
+        </p>
+
+        <a href="https://pl.wikipedia.org/wiki/Małpy" target="_blank" style="color: gold;">
+            👉 Kliknij tutaj – Wikipedia o małpach
+        </a>
+
+    </div>
 
 </body>
 </html>
+
