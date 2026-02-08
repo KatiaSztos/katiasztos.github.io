@@ -11,21 +11,24 @@
             color: white;
         }
 
-        video {
+        /* FILM W TLE */
+        .video-bg {
             position: fixed;
-            right: 0;
-            bottom: 0;
+            top: 0;
+            left: 0;
             min-width: 100%;
             min-height: 100%;
             z-index: -1;
+            object-fit: cover;
         }
 
+        /* ZAWARTOŚĆ */
         .content {
-            background: rgba(0, 0, 0, 0.75);
-            margin: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 30px;
             padding: 30px;
             border-radius: 20px;
-            border: 2px solid gold;
+            border: 3px solid gold;
         }
 
         h1 {
@@ -34,19 +37,23 @@
             text-decoration: underline;
         }
 
-        img {
-            width: 250px;
-            border-radius: 15px;
-            border: 2px solid gold;
+        .gallery img {
+            width: 240px;
             margin: 10px;
+            border-radius: 15px;
+            border: 3px solid gold;
+        }
+
+        .banana {
+            font-size: 30px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- FILMIK W TLE -->
-    <video autoplay muted loop>
+    <!-- FILMIK W TLE (SAM LECI) -->
+    <video class="video-bg" autoplay muted loop>
         <source src="https://cdn.coverr.co/videos/coverr-monkey-on-a-tree-5177/1080p.mp4" type="video/mp4">
     </video>
 
@@ -55,49 +62,50 @@
         <h1>🐒 Świat Małp 🍌</h1>
 
         <p>
-            <b>Małpy</b> to jedne z najbardziej <i>inteligentnych</i> zwierząt na świecie.
-            Żyją głównie w <u>lasach tropikalnych</u> i uwielbiają wspinaczkę.
+            <b>Małpy</b> to bardzo <i>inteligentne</i> zwierzęta,
+            które żyją głównie w <u>lasach tropikalnych</u>.
+        </p>
+
+        <p style="color: yellow; font-size: 20px;">
+            Ich ulubionym jedzeniem są <b>banany</b> 🍌🍌🍌
         </p>
 
         <p>
-            Ich ulubionym przysmakiem są <b style="color: yellow;">banany 🍌</b>,
-            ale jedzą też owoce, liście oraz owady.
-        </p>
-
-        <p style="color: lightgreen; font-size: 18px;">
-            Małpy potrafią używać narzędzi, zapamiętywać twarze oraz uczyć się przez obserwację.
-        </p>
-
-        <p>
-            Wyróżniamy małpy <sup>człekokształtne</sup> oraz <sub>niższe</sub>.
+            Małpy <sup>człekokształtne</sup> są najbardziej zbliżone do ludzi,
+            natomiast małpy <sub>niższe</sub> są mniejsze i bardzo zwinne.
         </p>
 
         <br>
 
-        <p style="font-family: 'Courier New'; color: lightblue;">
-            Szympansy są bardzo podobne do ludzi – mają nawet podobne DNA.
+        <p style="font-family: 'Courier New'; color: lightgreen;">
+            Szympansy potrafią rozwiązywać problemy i używać narzędzi.
         </p>
 
         <hr>
 
-        <h2 style="color: orange;">📸 Zdjęcia małp</h2>
+        <h2 style="color: orange;">📸 Zdjęcia małp i bananów</h2>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Chimpanzee_Head.jpg" alt="Szympans">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Gorilla_gorilla.jpg" alt="Goryl">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Orangutan_Borneo.jpg" alt="Orangutan">
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Chimpanzee_Head.jpg" alt="Szympans">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Gorilla_gorilla.jpg" alt="Goryl">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Orangutan_Borneo.jpg" alt="Orangutan">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Banan">
+        </div>
 
         <hr>
 
-        <p style="color: gold;">
-            Jeśli chcesz dowiedzieć się więcej o małpach:
+        <p>
+            Więcej informacji znajdziesz tutaj:
         </p>
 
         <a href="https://pl.wikipedia.org/wiki/Małpy" target="_blank" style="color: gold;">
-            👉 Kliknij tutaj – Wikipedia o małpach
+            👉 Wikipedia – Małpy
         </a>
 
     </div>
 
 </body>
 </html>
+
+
 
