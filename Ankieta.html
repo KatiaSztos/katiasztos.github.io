@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ankieta</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #1f1f1f;
+            border: 3px solid gold;
+            border-radius: 20px;
+            padding: 30px;
+            width: 420px;
+            box-shadow: 0 0 30px rgba(255,215,0,0.3);
+        }
+
+        h1 {
+            color: gold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid gold;
+            background: black;
+            color: gold;
+        }
+
+        .group {
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            border-radius: 25px;
+            border: 2px solid gold;
+            background: black;
+            color: gold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: gold;
+            color: black;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: gold;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <a class="back" href="index.html">⬅ Powrót do strony głównej</a>
+
+    <h1>Ankieta użytkownika</h1>
+
+    <form>
+
+        <label>Podaj imię:</label>
+        <input type="text" name="imie">
+
+        <label>Podaj hasło:</label>
+        <input type="password" name="haslo">
+
+        <label>Wybierz ulubiony kolor:</label>
+        <div class="group">
+            <input type="radio" name="kolor"> Czarny<br>
+            <input type="radio" name="kolor"> Zielony<br>
+            <input type="radio" name="kolor"> Niebieski<br>
+            <input type="radio" name="kolor"> Złoty<br>
+            <input type="radio" name="kolor"> Srebrny
+        </div>
+
+        <label>Wybierz ulubione owoce:</label>
+        <div class="group">
+            <input type="checkbox"> Banan 🍌<br>
+            <input type="checkbox"> Jabłko<br>
+            <input type="checkbox"> Truskawka<br>
+            <input type="checkbox"> Mango<br>
+            <input type="checkbox"> Ananas
+        </div>
+
+        <label>Wybierz ulubiony przedmiot:</label>
+        <select>
+            <option>Informatyka</option>
+            <option>Matematyka</option>
+            <option>WF</option>
+            <option>Biologia</option>
+        </select>
+
+        <button class="btn" type="submit">Wyślij ankietę</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
