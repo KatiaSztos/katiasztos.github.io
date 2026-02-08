@@ -1,20 +1,73 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Tu wpisz opis zawartości strony">
-    <title>Cwel Alan Pikulski </title>
-    <link rel="icon" href="Małpaintro.jpg" type="image/jpeg">
+    <meta charset="UTF-8">
+    <title>Strona startowa</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background: #1f1f1f;
+            border: 3px solid gold;
+            border-radius: 20px;
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        h1 {
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px 0;
+            padding: 14px;
+            border: 2px solid gold;
+            border-radius: 30px;
+            color: gold;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: gold;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1></h1>
-Oliwier Częścik <br>
-<a href="https://katiasztos.github.io/Zadanie1.html" target="_blank">Zadanie1</a>  <br>
-<a href="https://katiasztos.github.io/Zadanie2.html" target="_blank">Zadanie2</a>  <br>
-</body>
+    <div class="card">
+        <h1>Strona startowa</h1>
+        <div class="author">Oliwier Częścik</div>
 
+        <a class="btn" href="zadanie1.html">Zadanie 1</a>
+        <a class="btn" href="zadanie2.html">Zadanie 2</a>
+    </div>
+
+</body>
 </html>
+
 
 
 
