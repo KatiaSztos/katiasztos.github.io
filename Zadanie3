@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3 – Prezentacja programu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: gold;
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: gold;
+            margin-top: 40px;
+        }
+
+        .box {
+            border: 3px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #111;
+        }
+
+        pre {
+            background-color: #eee;
+            color: #c00;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-link {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Zadanie 3 – Prezentacja programu</h1>
+
+    <div class="box">
+        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+    cout &lt;&lt; "Kim jest Marcel Bulik?\n";
+    cout &lt;&lt; "Marcel Bulik jest uczniem klasy 8.\n";
+    cout &lt;&lt; "Interesuje się sportem i programowaniem.\n";
+    cout &lt;&lt; "Dziękuję za uwagę!\n";
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <p>
+        Powyższy program przedstawia prezentację Marcela Bulika w programie C++.
+        Praca wykonana przez Huberta Derlatkę.
+    </p>
+
+    <h2>Nagranie dźwiękowe:</h2>
+    <div class="box">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+
+    <h2>Nagranie wideo:</h2>
+    <div class="box">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+        </video>
+    </div>
+
+    <div class="footer-link">
+        Odwiedź stronę z pomocą w tworzeniu programu:
+        <a href="https://learn.microsoft.com/pl-pl/cpp/" target="_blank">
+            Microsoft C++ Tutorial
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
