@@ -1,0 +1,74 @@
+body {
+    background: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Karta jak na stronie głównej */
+.card {
+    background: #1f1f1f;
+    border: 3px solid gold;
+    border-radius: 20px;
+    padding: 40px;
+    width: 600px;
+    box-shadow: 0 0 30px rgba(255,215,0,0.3);
+}
+
+/* 1. Nagłówek niebieski na żółtym tle */
+.naglowek {
+    color: blue;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 2. Czcionka tabeli 16px */
+table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Złote obramowania */
+th, td {
+    border: 2px solid gold;
+    padding: 10px;
+}
+
+/* 3. Kolumna godzina do prawej */
+td:nth-child(2) {
+    text-align: right;
+}
+
+/* 4. Nr lekcji i godziny wyśrodkowane w pionie */
+td:nth-child(1),
+td:nth-child(2) {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 5. Nazwy przedmiotów zielone */
+td:nth-child(3) {
+    color: green;
+}
+
+/* Informatyka – styl lokalny (żółty) */
+.info {
+    color: yellow;
+}
+
+/* Przycisk powrotu */
+.back {
+    color: gold;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
